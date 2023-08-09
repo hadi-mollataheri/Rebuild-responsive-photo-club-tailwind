@@ -15,9 +15,11 @@
     />
   </head>
 
-  <body>
-    <header class="flex flex-col items-center text-center mb-28">
-      <p class="my-5 py-4 font-bold text-xl">
+  <body class="sm:mx-3">
+    <header
+      class="flex flex-col items-center text-center mb-28 sm:max-md:flex-row sm:max-md:justify-between sm:max-md:mx-2"
+    >
+      <p class="my-5 py-4 font-bold text-xl sm:max-md:text-2xl">
         <a href="#" class="text-blue-700"
           ><span class="text-red-600 font-['Concert_One']">P</span>hoto-<span
             class="text-red-600 font-['Concert_One']"
@@ -26,22 +28,22 @@
         >
       </p>
       <nav>
-        <ul>
-          <li class="my-1 scale-95">
+        <ul class="sm:max-md:flex">
+          <li class="my-1 scale-95 sm:max-md:scale-100 sm:max-md:px-1">
             <a
               href="#equipment"
               class="p-0.5 bg-red-600 text-white hover:text-blue-950 active:bg-blue-900 active:text-yellow-400 transition rounded-sm text-xs"
               >Equipment</a
             >
           </li>
-          <li class="my-1 scale-95">
+          <li class="my-1 scale-95 sm:max-md:scale-100 sm:max-md:px-1">
             <a
               href="#photos"
               class="p-0.5 bg-red-600 text-white hover:text-blue-950 active:bg-blue-900 active:text-yellow-400 transition rounded-sm text-xs"
               >Photos</a
             >
           </li>
-          <li class="my-1 scale-95">
+          <li class="my-1 scale-95 sm:max-md:scale-100 sm:max-md:px-1">
             <a
               href="#contact-us"
               class="p-0.5 bg-red-600 text-white hover:text-blue-950 active:bg-blue-900 active:text-yellow-400 transition rounded-sm text-xs"
@@ -61,63 +63,99 @@
           />
         </div>
         <div class="banner-content">
-          <h3 class="text-blue-900">
+          <p class="text-blue-900 sm:text-lg">
             Hello there! we come together every now and then. we will be glad if
             you join us. We can you help with a lot of topics such as type of
             cameras and different type of photography.
-          </h3>
+          </p>
         </div>
       </div>
 
       <div id="main" class="mx-2 my-20 text-center">
         <h2
-          class="shadow-md shadow-sky-800 bg-yellow-400 text-center rounded mb-10 font-semibold"
+          class="shadow-md shadow-sky-800 bg-yellow-400 text-center rounded mb-10 font-semibold sm:text-xl"
         >
           Things you can learn about!
         </h2>
         <div class="main-container">
-          <div class="container">
+          <div class="mx-auto">
             <div class="main-item camera mt-10">
               <h3
                 id="equipment"
-                class="inline-block bg-green-500 rounded my-5 p-1 scale-95"
+                class="inline-block bg-green-500 rounded my-5 p-1 scale-95 sm:text-xl"
               >
                 Different Type of Cameras
               </h3>
-              <div id="camera-pics-flex" class="flex flex-col gap-y-1">
-                <img src="./images/c1.jpg" alt="picture of a camera" class="shadow-sm shadow-slate-700"/>
-                <img src="./images/c2.jpg" alt="picture of a camera" class="shadow-sm shadow-slate-700"/>
-                <img src="./images/c3.jpg" alt="picture of a camera" class="shadow-sm shadow-slate-700"/>
+              <div id="camera-pics-flex" class="flex flex-col gap-y-1 sm:max-md:grid sm:max-md:grid-cols-2 sm:max-md:gap-2">
+                <img
+                  src="./images/c1.jpg"
+                  alt="picture of a camera"
+                  class="shadow-sm shadow-slate-700"
+                />
+                <img
+                  src="./images/c2.jpg"
+                  alt="picture of a camera"
+                  class="shadow-sm shadow-slate-700"
+                />
+                <img
+                  src="./images/c3.jpg"
+                  alt="picture of a camera"
+                  class="shadow-sm shadow-slate-700"
+                />
               </div>
             </div>
           </div>
-          <div class="container">
+          <div class="mx-auto">
             <div class="main-item nature mt-10">
               <h3
                 id="photos"
-                class="inline-block bg-green-500 rounded my-5 p-1 scale-95"
+                class="inline-block bg-green-500 rounded my-5 p-1 scale-95 sm:text-xl"
               >
                 Nature Photography
               </h3>
-              <div id="nature-pics-flex" class="flex flex-col gap-y-1">
-                <img src="./images/n1.jpg" alt="picture of nature" class="shadow-sm shadow-slate-700"/>
-                <img src="./images/n2.jpg" alt="picture of nature" class="shadow-sm shadow-slate-700"/>
-                <img src="./images/n3.jpg" alt="picture of nature" class="shadow-sm shadow-slate-700"/>
+              <div id="nature-pics-flex" class="flex flex-col gap-y-1 sm:max-md:grid sm:max-md:grid-cols-2 sm:max-md:gap-2">
+                <img
+                  src="./images/n1.jpg"
+                  alt="picture of nature"
+                  class="shadow-sm shadow-slate-700"
+                />
+                <img
+                  src="./images/n2.jpg"
+                  alt="picture of nature"
+                  class="shadow-sm shadow-slate-700"
+                />
+                <img
+                  src="./images/n3.jpg"
+                  alt="picture of nature"
+                  class="shadow-sm shadow-slate-700"
+                />
               </div>
             </div>
           </div>
-          <div class="container">
+          <div class="mx-auto">
             <div class="main-item street mt-10">
               <h3
                 id="city-photos"
-                class="inline-block bg-green-500 rounded my-5 p-1 scale-95"
+                class="inline-block bg-green-500 rounded my-5 p-1 scale-95 sm:text-xl"
               >
                 Street Photography
               </h3>
-              <div id="street-pics-flex" class="flex flex-col gap-y-1">
-                <img src="./images/s1.jpg" alt="picture of Street" class="shadow-sm shadow-slate-700"/>
-                <img src="./images/s2.jpg" alt="picture of Street" class="shadow-sm shadow-slate-700"/>
-                <img src="./images/s3.jpg" alt="picture of Street" class="shadow-sm shadow-slate-700"/>
+              <div id="street-pics-flex" class="flex flex-col gap-y-1 sm:max-md:grid sm:max-md:grid-cols-2 sm:max-md:gap-2">
+                <img
+                  src="./images/s1.jpg"
+                  alt="picture of Street"
+                  class="shadow-sm shadow-slate-700 sm:max-md:self-stretch"
+                />
+                <img
+                  src="./images/s2.jpg"
+                  alt="picture of Street"
+                  class="shadow-sm shadow-slate-700"
+                />
+                <img
+                  src="./images/s3.jpg"
+                  alt="picture of Street"
+                  class="shadow-sm shadow-slate-700"
+                />
               </div>
             </div>
           </div>
@@ -126,24 +164,43 @@
       <hr />
     </main>
     <footer class="m-2">
-      <div class="contact">
-
-        <h3 id="contact-us" class="font-semibold">Contact</h3>
-        <div class="grid grid-cols-2 justify-center justify-items-center text-xs italic">
+      <div>
+        <h3 id="contact-us" class="font-semibold sm:text-xl">Contact</h3>
+        <div
+          class="grid grid-cols-2 justify-center justify-items-center text-xs italic sm:text-sm sm:items-center"
+        >
           <div id="information">
             <h5>
               <address>Address: Tehran, Hakimieh, Ofogh Boulevard</address>
             </h5>
-            <h5 class="italic">Number: 0912***5045</h5>
+            <h5>Number: 0912***5045</h5>
           </div>
           <div id="features" class="text-cyan-700">
-            <h5><a href="#" class="cursor-pointer inline-block my-1 hover:text-cyan-900">Membership</a></h5>
-            <h5><a href="#" class="cursor-pointer inline-block my-1 hover:text-cyan-900">News</a></h5>
-            <h5><a href="#" class="cursor-pointer inline-block my-1 hover:text-cyan-900">More About Us</a></h5>
+            <h5>
+              <a
+                href="#"
+                class="cursor-pointer inline-block my-1 hover:text-cyan-900"
+                >Membership</a
+              >
+            </h5>
+            <h5>
+              <a
+                href="#"
+                class="cursor-pointer inline-block my-1 hover:text-cyan-900"
+                >News</a
+              >
+            </h5>
+            <h5>
+              <a
+                href="#"
+                class="cursor-pointer inline-block my-1 hover:text-cyan-900"
+                >More About Us</a
+              >
+            </h5>
           </div>
         </div>
       </div>
-      <p id="copy-right" class="my-5 text-center">
+      <p id="copy-right" class="my-5 text-center text-xs sm:text-sm">
         <small
           >All rights are reserved for the creator of the website (Mohammed Hadi
           Mollatahri)!</small
